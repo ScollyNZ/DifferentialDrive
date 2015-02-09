@@ -6,9 +6,9 @@ using Microsoft.SPOT.Hardware;
 
 namespace Bluetooth
 {
-    class LedControl
+    class LedOnOffControl
     {
-        public LedControl()
+        public LedOnOffControl()
         {
             SerialPort serial = new SerialPort(SerialPorts.COM1,
                   9600, Parity.None, 8, StopBits.One);
