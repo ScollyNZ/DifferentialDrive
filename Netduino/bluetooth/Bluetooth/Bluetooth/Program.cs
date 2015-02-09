@@ -15,8 +15,8 @@ namespace Bluetooth
         {
             //var x = new HC05SetSlave();
             //var x = new VoltageControl();
-            var x = new BasicEcho();
-
+            //var x = new BasicEcho();
+            var x = new LedControl();
 
         }
 
