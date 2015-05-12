@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Point Configuration Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="This example shows configuration on a point basis with minimal configuration. This gives you the freedom of having datapoints with different radi of influence">
+    <meta name="keywords" content="point basis config heatmap, heatmap.js, heatmap config, radius influence heatmap">
+    <link rel="stylesheet" href="http://www.patrick-wied.at/static/heatmapjs/assets/css/commons.css">
+    <link rel="stylesheet" href="http://www.patrick-wied.at/static/heatmapjs/assets/css/example-commons.css">
+    <link rel="stylesheet" href="http://www.patrick-wied.at/static/heatmapjs/assets/third-party/prism/prism.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="demo-wrapper">
+            <div class="heatmap" style="position: relative;">
+                <canvas class="heatmap-canvas" width="250" height="250" style="position: absolute; left: 0px; top: 0px;"></canvas>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" defer="" async="" src="./Point Configuration Example_files/piwik.js"></script>
+    <script src="./Point Configuration Example_files/heatmap.min.js"></script>
+    <script>
+        window.onload = function () {
+
+            function generateRandomData(len) {
+                // generate some random data
+                var points = [];
+                var width = 250;
+                var height = 250;
+
+
+                points.push(createPoint(7, 7, 35))
+                points.push(createPoint(105, 7, 35))
+                points.push(createPoint(207, 7, 35))
+                points.push(createPoint(42, 25, 35))
+                points.push(createPoint(105, 25, 35))
+                points.push(createPoint(170, 25, 35))
+                points.push(createPoint(75, 37, 35))
+                points.push(createPoint(130, 37, 35))
+                points.push(createPoint(7, 50, 35))
+                points.push(createPoint(45, 50, 35))
+                points.push(createPoint(75, 50, 37))
+                points.push(createPoint(110, 50, 35))
+                points.push(createPoint(130, 50, 35))
+                points.push(createPoint(165, 50, 35))
+                points.push(createPoint(205, 50, 35))
+                points.push(createPoint(75, 65, 35))
+                points.push(createPoint(130, 65, 35))
+                points.push(createPoint(45, 75, 35))
+                points.push(createPoint(105, 75, 35))
+                points.push(createPoint(165, 75, 35))
+                points.push(createPoint(7, 100, 35))
+                points.push(createPoint(105, 100, 35))
+                points.push(createPoint(210, 100, 35))
+
+
+
+                var data = { data: points, min: 0, max: 1 };
+                return data;
+            }
+
+            function createPoint(x, y, val) {
+                var minValue = 33.5;
+                var maxValue = 37.0;
+                var scaleFactor = 4;
+                return { x: x*scaleFactor, y: y*scaleFactor, value: (val - minValue) / (maxValue - minValue) }
+            }
+
+            var heatmapInstance = h337.create({
+                container: document.querySelector('.heatmap'),
+                backgroundColor: 'blue',
+                radius: 50,
+                gradient: {
+                    '0': 'blue',
+                    '0.5': 'yellow',
+                    '1': 'red',
+
+                }
+            });
+
+            // generate 200 random datapoints
+            var data = generateRandomData(1);
+            heatmapInstance.setData(data);
+
+        };
+    </script>
+    <script src="./Point Configuration Example_files/prism.js"></script>
+
+</body>
+</html>

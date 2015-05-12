@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalogMux", "AnalogMux\AnalogMux.csproj", "{0C97090A-17EF-4E18-9EE1-4D26B9FC306E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nz.co.scoltock.beehivemonitor", "nz.co.scoltock.beehivemonitor\nz.co.scoltock.beehivemonitor.csproj", "{1C0CCC16-70E4-404C-85E4-365D55515C0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nz.co.scoltock.beehivemonitor.tests", "nz.co.scoltock.beehivemonitor.tests\nz.co.scoltock.beehivemonitor.tests.csproj", "{017BB9F2-C994-4518-96E6-70317C2953EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C97090A-17EF-4E18-9EE1-4D26B9FC306E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C97090A-17EF-4E18-9EE1-4D26B9FC306E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C97090A-17EF-4E18-9EE1-4D26B9FC306E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0C97090A-17EF-4E18-9EE1-4D26B9FC306E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C97090A-17EF-4E18-9EE1-4D26B9FC306E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C97090A-17EF-4E18-9EE1-4D26B9FC306E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1C0CCC16-70E4-404C-85E4-365D55515C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0CCC16-70E4-404C-85E4-365D55515C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0CCC16-70E4-404C-85E4-365D55515C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0CCC16-70E4-404C-85E4-365D55515C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017BB9F2-C994-4518-96E6-70317C2953EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017BB9F2-C994-4518-96E6-70317C2953EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017BB9F2-C994-4518-96E6-70317C2953EF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{017BB9F2-C994-4518-96E6-70317C2953EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017BB9F2-C994-4518-96E6-70317C2953EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017BB9F2-C994-4518-96E6-70317C2953EF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
